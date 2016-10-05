@@ -11,7 +11,7 @@ jatzee_hand_length = 5
 
 
 def consequent_check(sorted_hand, last, x):
-    return x == last or x < sorted_hand[sorted_hand.index(x) + 1]
+    return x == last or x + 1 == sorted_hand[sorted_hand.index(x) + 1]
 
 
 def stairs(hand):
